@@ -1,0 +1,14 @@
+export const name = state => state.name
+export const isLogin = state => state.isLogin
+export const books = state => state.books
+export const bookId = state => state.bookId
+export const bigSort = state => state.bigSort
+export const smallSort = state => state.smallSort
+export const adminShow = state => state.adminShow
+export const selectText = state => state.selectText
+export const selectBook = state => state.selectBook
+export const message_id = state => state.message_id
+export const sells_name = state => state.sells_name
+export const isActive = state => state.isActive
+export const port = state => state.port
+export const orderState = state => state.orderState

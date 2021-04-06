@@ -1,0 +1,140 @@
+import {request} from './network'
+
+export function getBigSort(){
+    return request({
+        url:'/books/big',
+        method:'get',
+    })
+}
+export function getSmallSort(){
+    return request({
+        url:'/books/small',
+        method:'get',
+    })
+}
+
+export function getBook(){
+    return request({
+        url:'/books/book',
+        method:'get',
+    })
+}
+
+export function getBookPage(data){
+    return request({
+        url:'/books/bookPage',
+        method:'get',
+        params:data,
+        withCredentials: true
+    })
+}
+export function getCheckBookPage(data){
+    return request({
+        url:'/books/checkBookPage',
+        method:'get',
+        params:data,
+        withCredentials: true
+    })
+}
+
+export function postCheckBookUpdate(data){
+    return request({
+        url:'/books/checkBookUpdate',
+        method:'post',
+        data:data,
+        withCredentials: true
+    })
+}
+
+export function getUserPage(data){
+    return request({
+        url:'/users/userPage',
+        method:'get',
+        params:data
+    })
+}
+
+export function postDeleteUser(data){
+    return request({
+        url:'/users/deleteUser',
+        method:'post',
+        data:data
+    })
+}
+
+
+export function addBook(data){
+    return request({
+        url:'/books/add',
+        method:'post',
+        data:data
+    })
+}
+
+
+
+export function deleteBook(data){
+    return request({
+        url:'/books/delete',
+        method:'post',
+        data:data
+    })
+}
+
+
+export function updateBook(data){
+    return request({
+        url:'/books/update',
+        method:'post',
+        data:data
+    })
+}
+
+
+export function getSortSums(data){
+    return request({
+        url:'/books/sortSum',
+        method:'get',
+        params:data
+    })
+}
+
+export function getAllBooksSums(data){
+    return request({
+        url:'/books/allBooksSum',
+        method:'get',
+        params:data
+    })
+}
+
+export function getAllUserSums(data){
+    return request({
+        url:'/books/allUserSum',
+        method:'get',
+        params:data
+    })
+}
+
+export function getAllOrderSums(data){
+    return request({
+        url:'/books/allOrderSum',
+        method:'get',
+        params:data
+    })
+}
+
+export function getTopThreeMessage(data){
+    return request({
+        url:'/books/topThreeMessage',
+        method:'get',
+        params:data
+    })
+}
+
+export function getTopSell(data){
+    return request({
+        url:'/books/topSell',
+        method:'get',
+        params:data
+    })
+}
